@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+/* One small stylesheet per section */
+@import "./sections/navbar.css";
+@import "./sections/hero.css";
+@import "./sections/services.css";
+@import "./sections/process.css";
+@import "./sections/why-us.css";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    /*
+     * Zeyla Tech brand tokens.
+     * Change the colours here and the whole site follows.
+     */
+    --color-brand-teal: #0b8f94;
+    --color-brand-teal-dark: #067077;
+    --color-brand-teal-light: #4fd1d6;
+    --color-navy: #04275a;
+    --color-navy-deep: #031a3d;
+    --color-ink: #020f26;
+
+    --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Geist", ui-sans-serif, system-ui, sans-serif;
+    --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+}
+
+::selection {
+    background: rgb(11 143 148 / 0.28);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/*
+ * Shared type system: every section heading ends in one serif-italic word or
+ * phrase (.accent), and every section opens with a small .eyebrow label.
+ * Kept in the components layer so utilities (text-*, mt-*) can still override.
+ */
+@layer components {
+    /*
+     * Framed section: a rounded card centred at 1340px max, with the page
+     * showing around it. Pair it with an outer wrapper that gives the gutter
+     * (px-3 sm:px-5). Below 1340px it simply fills the width minus the gutter.
+     */
+    .frame {
+        width: 100%;
+        max-width: 1340px;
+        margin-inline: auto;
+        border-radius: 1.5rem;
+    }
+    @media (min-width: 1024px) {
+        .frame {
+            border-radius: 2.25rem;
+        }
+    }
+
+    .accent {
+        font-family: var(--font-serif);
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        font-size: 1.1em;
+    }
+
+    .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.7rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--color-brand-teal-dark);
+    }
+    .eyebrow::before {
+        content: "";
+        width: 1.75rem;
+        height: 1px;
+        background: currentColor;
+        opacity: 0.7;
+    }
+    .eyebrow-light {
+        color: var(--color-brand-teal-light);
+    }
+}

@@ -1,0 +1,5 @@
+/* Link of the section currently in view (set by js/sections/navbar.js) */
+[data-nav][aria-current='true'] {
+    background: rgb(2 15 38 / 0.06);
+    color: var(--color-ink);
+}

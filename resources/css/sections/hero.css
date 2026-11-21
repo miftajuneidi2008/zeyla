@@ -1,0 +1,112 @@
+/*
+ * Light, animated colour behind the hero (no filled background).
+ * Two soft blobs are drawn by the .hero-aurora element itself (::before and
+ * ::after), so this file works even without extra markup. A third, optional
+ * blue blob is the <span class="hero-blob-c"> inside it. They drift slowly using
+ * transform only (smooth and cheap), and the wrapper is masked to an ellipse so
+ * the colour fades out before the section edges: no hard cutoff.
+ */
+.hero-aurora {
+    overflow: hidden;
+    -webkit-mask-image: radial-gradient(ellipse closest-side at 50% 50%, #000 45%, transparent 100%);
+    mask-image: radial-gradient(ellipse closest-side at 50% 50%, #000 45%, transparent 100%);
+}
+
+.hero-aurora::before,
+.hero-aurora::after,
+.hero-blob-c {
+    content: "";
+    position: absolute;
+    border-radius: 9999px;
+    will-change: transform;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Cyan, top right, behind the artwork */
+.hero-aurora::before {
+    width: 36rem;
+    height: 36rem;
+    top: -8%;
+    left: 50%;
+    background: radial-gradient(circle, rgb(79 209 214 / 0.38), transparent 68%);
+    animation-name: hero-drift-a;
+    animation-duration: 18s;
+}
+
+/* Brand teal, bottom centre */
+.hero-aurora::after {
+    width: 32rem;
+    height: 32rem;
+    bottom: -14%;
+    left: 24%;
+    background: radial-gradient(circle, rgb(11 143 148 / 0.26), transparent 68%);
+    animation-name: hero-drift-b;
+    animation-duration: 22s;
+}
+
+/* Soft blue, left, keeps the palette from feeling all green */
+.hero-blob-c {
+    width: 28rem;
+    height: 28rem;
+    top: 14%;
+    left: 4%;
+    background: radial-gradient(circle, rgb(80 130 230 / 0.20), transparent 68%);
+    animation-name: hero-drift-c;
+    animation-duration: 26s;
+}
+
+@keyframes hero-drift-a {
+    from { transform: translate3d(0, 0, 0) scale(1); }
+    to   { transform: translate3d(-7rem, 5rem, 0) scale(1.18); }
+}
+@keyframes hero-drift-b {
+    from { transform: translate3d(0, 0, 0) scale(1.1); }
+    to   { transform: translate3d(8rem, -4rem, 0) scale(0.92); }
+}
+@keyframes hero-drift-c {
+    from { transform: translate3d(0, 0, 0) scale(0.95); }
+    to   { transform: translate3d(6rem, 6rem, 0) scale(1.15); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-aurora::before,
+    .hero-aurora::after,
+    .hero-blob-c {
+        animation: none;
+    }
+}
+
+/* Fine blueprint grid that fades out toward the edges */
+.hero-grid {
+    background-image:
+        linear-gradient(to right, rgb(2 15 38 / 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(2 15 38 / 0.05) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse 45% 60% at 68% 42%, #000 15%, transparent 70%);
+    mask-image: radial-gradient(ellipse 45% 60% at 68% 42%, #000 15%, transparent 70%);
+}
+
+/* Light travelling along the hero circuit lines */
+.trace-flow {
+    stroke-dasharray: 0.07 0.93;
+    animation: trace-flow 3.4s linear infinite;
+}
+@keyframes trace-flow {
+    to {
+        stroke-dashoffset: -1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .trace-flow {
+        animation: none;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .js [data-hero-item] {
+        opacity: 0;
+    }
+}

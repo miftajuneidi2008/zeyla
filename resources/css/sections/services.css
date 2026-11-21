@@ -1,0 +1,33 @@
+.svc-art svg { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; }
+
+.svc-art .pulse, .svc-art .spin, .svc-art .orbit,
+.svc-art .float, .svc-art .blink {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+/* Soft teal light that follows the pointer across the card */
+.svc-spot {
+    background: radial-gradient(360px circle at var(--mx, 50%) var(--my, 0%), rgb(11 143 148 / 0.09), transparent 65%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.svc:hover .svc-spot { opacity: 1; }
+
+/* Illustrations come alive while the card is hovered */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    .svc:hover .flow  { animation: svc-flow 1s linear infinite; }
+    .svc:hover .pulse { animation: svc-pulse 1.8s ease-in-out infinite; }
+    .svc:hover .spin  { animation: svc-spin 6s linear infinite; }
+    .svc:hover .orbit { animation: svc-spin 24s linear infinite; }
+    .svc:hover .float { animation: svc-float 2.4s ease-in-out infinite; }
+    .svc:hover .blink { animation: svc-blink 1.4s ease-in-out infinite; }
+    .svc .blink:nth-child(2) { animation-delay: 0.25s; }
+    .svc .blink:nth-child(3) { animation-delay: 0.5s; }
+}
+
+@keyframes svc-flow  { to { stroke-dashoffset: -11; } }
+@keyframes svc-pulse { 50% { transform: scale(1.12); } }
+@keyframes svc-spin  { to { transform: rotate(360deg); } }
+@keyframes svc-float { 50% { transform: translateY(-6px); } }
+@keyframes svc-blink { 50% { opacity: 0.2; } }
