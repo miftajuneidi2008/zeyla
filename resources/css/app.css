@@ -17,12 +17,14 @@
      * Zeyla Tech brand tokens.
      * Change the colours here and the whole site follows.
      */
-    --color-brand-teal: #0b8f94;
-    --color-brand-teal-dark: #067077;
-    --color-brand-teal-light: #4fd1d6;
-    --color-navy: #04275a;
-    --color-navy-deep: #031a3d;
-    --color-ink: #020f26;
+    --color-brand-teal: #2563EB;
+    --color-brand-teal-dark: #1D4ED8;
+    --color-brand-teal-light: #60A5FA;
+    --color-navy: #153E75;
+    --color-navy-deep: #0E2B54;
+    --color-ink: #153E75;
+    --color-brand-red: #D7263D;
+    --color-cloud: #F5F7FA;
 
     --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
     --font-display: "Geist", ui-sans-serif, system-ui, sans-serif;
@@ -38,7 +40,7 @@ body {
 }
 
 ::selection {
-    background: rgb(11 143 148 / 0.28);
+    background: rgb(37 99 235 / 0.28);
 }
 
 @media (prefers-reduced-motion: reduce) {

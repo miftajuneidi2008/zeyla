@@ -3,7 +3,7 @@
 
         <div class="max-w-2xl">
             <p class="eyebrow">How we work</p>
-            <h2 class="mt-5 font-display text-4xl font-semibold tracking-[-0.03em] text-ink sm:text-5xl">Our <span class="accent text-brand-teal-dark">process</span></h2>
+            <h2 class="mt-5 font-display text-4xl font-semibold tracking-[-0.03em] text-ink sm:text-5xl">Our <span class="accent text-brand-red">process</span></h2>
             <p class="mt-5 text-lg leading-relaxed text-slate-600">
                 Five steps, from the first conversation to long-term support.
             </p>

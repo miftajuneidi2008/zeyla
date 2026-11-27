@@ -7,8 +7,8 @@
     background: linear-gradient(145deg, var(--color-brand-teal), var(--color-brand-teal-dark));
     color: #fff;
     box-shadow:
-        0 0 0 6px rgb(11 143 148 / 0.12),
-        0 10px 22px -8px rgb(6 112 119 / 0.55);
+        0 0 0 6px rgb(37 99 235 / 0.12),
+        0 10px 22px -8px rgb(29 78 216 / 0.55);
     transition: background 0.4s, color 0.4s, box-shadow 0.4s;
 }
 

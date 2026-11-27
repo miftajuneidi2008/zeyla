@@ -1,11 +1,11 @@
 <div class="px-3 sm:px-5">
-<section id="why-us" class="frame scroll-mt-24 overflow-hidden bg-linear-to-br from-sky-50 via-white to-teal-50 py-20 ring-1 ring-slate-900/[0.07] lg:py-28">
+<section id="why-us" class="frame scroll-mt-24 overflow-hidden bg-linear-to-br from-sky-50 via-white to-blue-50 py-20 ring-1 ring-slate-900/[0.07] lg:py-28">
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         <div data-why-head>
             <p class="eyebrow">Why {{ config('zeyla.name') }}</p>
             <h2 class="mt-5 max-w-2xl font-display text-4xl font-semibold tracking-[-0.03em] text-ink sm:text-5xl">
-                Why clients <span class="accent text-brand-teal-dark">choose us</span>
+                Why clients <span class="accent text-brand-red">choose us</span>
             </h2>
         </div>
         <div data-why-rule class="mt-7 h-px w-24 bg-linear-to-r from-brand-teal to-transparent"></div>

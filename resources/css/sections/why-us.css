@@ -17,7 +17,7 @@
     height: 640px;
     background: radial-gradient(
         closest-side,
-        rgb(11 143 148 / 0.18),
+        rgb(37 99 235 / 0.18),
         transparent
     );
     pointer-events: none;
@@ -39,7 +39,7 @@
     opacity: 0;
     background: radial-gradient(
         380px circle at var(--mx) var(--my),
-        rgb(11 143 148 / 0.22),
+        rgb(37 99 235 / 0.22),
         transparent 65%
     );
     transition: opacity 0.4s ease;

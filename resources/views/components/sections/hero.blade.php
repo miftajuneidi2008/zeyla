@@ -60,7 +60,7 @@
         <div class="lg:col-span-5" aria-hidden="true">
             <svg viewBox="0 0 560 420" class="mx-auto w-full max-w-lg" fill="none">
                 <path id="hero-arc" pathLength="1" stroke-dasharray="1" d="M20 385 C190 440 470 370 535 40"
-                      stroke="#0b8f94" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+                      stroke="#2563EB" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
 
                 <g id="hero-pixels"></g>
 
@@ -74,9 +74,9 @@
                 @endphp
 
                 @foreach ($traces as [$d, [$cx, $cy]])
-                    <path class="trace-base" pathLength="1" stroke-dasharray="1" d="{{ $d }}" stroke="#0b8f94" stroke-opacity=".4" stroke-width="2" stroke-linejoin="round"/>
-                    <path class="trace-flow opacity-0" pathLength="1" style="animation-delay: {{ $loop->index * 0.7 }}s" d="{{ $d }}" stroke="#067077" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <circle class="trace-node" cx="{{ $cx }}" cy="{{ $cy }}" r="6" fill="#ffffff" stroke="#0b8f94" stroke-width="2"/>
+                    <path class="trace-base" pathLength="1" stroke-dasharray="1" d="{{ $d }}" stroke="#2563EB" stroke-opacity=".4" stroke-width="2" stroke-linejoin="round"/>
+                    <path class="trace-flow opacity-0" pathLength="1" style="animation-delay: {{ $loop->index * 0.7 }}s" d="{{ $d }}" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle class="trace-node" cx="{{ $cx }}" cy="{{ $cy }}" r="6" fill="#ffffff" stroke="#2563EB" stroke-width="2"/>
                 @endforeach
             </svg>
         </div>

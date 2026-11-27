@@ -26,7 +26,7 @@ export function initHero() {
             rect.setAttribute("width", size);
             rect.setAttribute("height", size);
             rect.setAttribute("rx", 1.5);
-            rect.setAttribute("fill", "#0b8f94");
+            rect.setAttribute("fill", "#2563EB");
             rect.setAttribute("opacity", 0.25 + density * 0.75);
             pixelLayer.appendChild(rect);
             pixels.push(rect);

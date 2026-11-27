@@ -16,7 +16,7 @@
 
 <div class="p-3 sm:p-5">
 <footer class="frame relative isolate overflow-hidden bg-ink text-sm ring-1 ring-white/10">
-    <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(36rem_22rem_at_8%_0%,rgba(11,143,148,0.16),transparent_65%)]" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(36rem_22rem_at_8%_0%,rgba(37,99,235,0.16),transparent_65%)]" aria-hidden="true"></div>
     <div class="mx-auto grid max-w-7xl gap-12 px-4 py-16 sm:px-6 lg:grid-cols-12 lg:gap-8 lg:px-8 lg:py-20">
 
         <div class="lg:col-span-4">

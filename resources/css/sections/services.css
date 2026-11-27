@@ -8,7 +8,7 @@
 
 /* Soft teal light that follows the pointer across the card */
 .svc-spot {
-    background: radial-gradient(360px circle at var(--mx, 50%) var(--my, 0%), rgb(11 143 148 / 0.09), transparent 65%);
+    background: radial-gradient(360px circle at var(--mx, 50%) var(--my, 0%), rgb(37 99 235 / 0.09), transparent 65%);
     opacity: 0;
     transition: opacity 0.3s;
 }

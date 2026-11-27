@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#020f26">
+    <meta name="theme-color" content="#153E75">
 
     <title>@yield('title', $site['title'])</title>
     <meta name="description" content="@yield('description', $site['description'])">
@@ -28,7 +28,7 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-white font-sans text-slate-700 antialiased">
+<body class="bg-cloud font-sans text-slate-700 antialiased">
 
     <a href="#main"
        class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-white focus:px-5 focus:py-2.5 focus:font-semibold focus:text-ink">

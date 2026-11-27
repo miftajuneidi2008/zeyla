@@ -16,7 +16,7 @@
         <div data-services-head class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div>
                 <p class="eyebrow">Services</p>
-                <h2 class="mt-5 font-display text-4xl font-semibold tracking-[-0.03em] text-ink sm:text-5xl">What we <span class="accent text-brand-teal-dark">do</span></h2>
+                <h2 class="mt-5 font-display text-4xl font-semibold tracking-[-0.03em] text-ink sm:text-5xl">What we <span class="accent text-brand-red">do</span></h2>
                 <p class="mt-5 max-w-xl text-lg leading-relaxed text-slate-600">
                     Five services, one team. Use what you need now and add more as your organization grows.
                 </p>

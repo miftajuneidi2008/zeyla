@@ -30,7 +30,7 @@
     height: 36rem;
     top: -8%;
     left: 50%;
-    background: radial-gradient(circle, rgb(79 209 214 / 0.38), transparent 68%);
+    background: radial-gradient(circle, rgb(96 165 250 / 0.38), transparent 68%);
     animation-name: hero-drift-a;
     animation-duration: 18s;
 }
@@ -41,7 +41,7 @@
     height: 32rem;
     bottom: -14%;
     left: 24%;
-    background: radial-gradient(circle, rgb(11 143 148 / 0.26), transparent 68%);
+    background: radial-gradient(circle, rgb(37 99 235 / 0.26), transparent 68%);
     animation-name: hero-drift-b;
     animation-duration: 22s;
 }
@@ -81,8 +81,8 @@
 /* Fine blueprint grid that fades out toward the edges */
 .hero-grid {
     background-image:
-        linear-gradient(to right, rgb(2 15 38 / 0.05) 1px, transparent 1px),
-        linear-gradient(to bottom, rgb(2 15 38 / 0.05) 1px, transparent 1px);
+        linear-gradient(to right, rgb(21 62 117 / 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(21 62 117 / 0.05) 1px, transparent 1px);
     background-size: 56px 56px;
     -webkit-mask-image: radial-gradient(ellipse 45% 60% at 68% 42%, #000 15%, transparent 70%);
     mask-image: radial-gradient(ellipse 45% 60% at 68% 42%, #000 15%, transparent 70%);

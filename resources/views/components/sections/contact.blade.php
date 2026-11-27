@@ -14,10 +14,10 @@
 @endphp
 
 <div class="px-3 pt-3 sm:px-5 sm:pt-5">
-<section id="contact" class="frame relative scroll-mt-24 overflow-hidden bg-linear-to-br from-[#d9eff1] via-[#e8f4f6] to-[#edf3fa] py-20 ring-1 ring-brand-teal/20 lg:py-28">
+<section id="contact" class="frame relative scroll-mt-24 overflow-hidden bg-linear-to-br from-[#DCE8FD] via-[#E8EFFC] to-[#F5F7FA] py-20 ring-1 ring-brand-teal/20 lg:py-28">
 
     {{-- Soft teal light on a pale tint, so this card breaks up the dark ones around it --}}
-    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(40rem_30rem_at_12%_20%,rgba(11,143,148,0.14),transparent_65%),radial-gradient(34rem_24rem_at_92%_90%,rgba(11,143,148,0.10),transparent_65%)]" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(40rem_30rem_at_12%_20%,rgba(37,99,235,0.14),transparent_65%),radial-gradient(34rem_24rem_at_92%_90%,rgba(37,99,235,0.10),transparent_65%)]" aria-hidden="true"></div>
 
     {{-- On phones: intro, form, details. On desktop: intro + details on the left, form on the right --}}
     <div class="relative mx-auto grid max-w-7xl gap-x-16 gap-y-12 px-4 sm:px-6 lg:grid-cols-12 lg:grid-rows-[auto_1fr] lg:px-8">
@@ -26,7 +26,7 @@
         <div class="lg:col-span-5 lg:row-start-1">
             <p class="eyebrow">Contact</p>
             <h2 class="mt-5 max-w-md font-display text-4xl font-semibold tracking-[-0.03em] text-ink text-balance sm:text-5xl">
-                Let's build something <span class="accent text-brand-teal-dark">together.</span>
+                Let's build something <span class="accent text-brand-red">together.</span>
             </h2>
             <p class="mt-6 max-w-md text-lg leading-relaxed text-slate-600">
                 Tell us what your organization needs. We'll reply with next steps.
@@ -53,7 +53,7 @@
                 </div>
 
                 <div>
-                    <label for="name" class="{{ $label }}">Name <span class="text-brand-teal-dark" aria-hidden="true">*</span></label>
+                    <label for="name" class="{{ $label }}">Name <span class="text-brand-red" aria-hidden="true">*</span></label>
                     <input type="text" id="name" name="name" value="{{ old('name') }}" required autocomplete="name"
                            placeholder="Enter your name" class="{{ $field }}"
                            @error('name') aria-invalid="true" aria-describedby="name-error" @enderror>
@@ -61,7 +61,7 @@
                 </div>
 
                 <div>
-                    <label for="email" class="{{ $label }}">Email <span class="text-brand-teal-dark" aria-hidden="true">*</span></label>
+                    <label for="email" class="{{ $label }}">Email <span class="text-brand-red" aria-hidden="true">*</span></label>
                     <input type="email" id="email" name="email" value="{{ old('email') }}" required autocomplete="email"
                            placeholder="Enter your email address" class="{{ $field }}"
                            @error('email') aria-invalid="true" aria-describedby="email-error" @enderror>
@@ -77,7 +77,7 @@
                 </div>
 
                 <div class="sm:col-span-2">
-                    <label for="message" class="{{ $label }}">Message <span class="text-brand-teal-dark" aria-hidden="true">*</span></label>
+                    <label for="message" class="{{ $label }}">Message <span class="text-brand-red" aria-hidden="true">*</span></label>
                     <textarea id="message" name="message" rows="5" required maxlength="3000"
                               placeholder="Tell us what you'd like to discuss." class="{{ $field }} resize-none"
                               @error('message') aria-invalid="true" aria-describedby="message-error" @enderror>{{ old('message') }}</textarea>
